@@ -8,6 +8,8 @@ services:
       - type: bind
         source: ./src
         target: /src
+    depends_on:
+      - db
   db:
     build:
       context: .
