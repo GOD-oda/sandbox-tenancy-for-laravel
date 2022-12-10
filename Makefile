@@ -4,5 +4,6 @@ build:
 down:
 	docker compose down -v --remove-orphans
 
-run:
-	docker compose run --rm app bash
+restart:
+	docker compose down
+	docker compose up -d
